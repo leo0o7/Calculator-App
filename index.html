@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="top-wrapper">
+        <h1>calc</h1>
+        <div class="theme-container">
+          <h2>THEME</h2>
+          <div class="button-wrapper">
+            <h2>1</h2>
+            <h2>2</h2>
+            <h2>3</h2>
+            <div class="button-container">
+              <button
+                class="theme-switcher"
+                data-theme="1"
+                data-active="true"
+                onclick="changeTheme(1)"
+              ></button>
+              <button
+                class="theme-switcher"
+                data-theme="2"
+                data-active="false"
+                onclick="changeTheme(2)"
+              ></button>
+              <button
+                class="theme-switcher"
+                data-theme="3"
+                data-active="false"
+                onclick="changeTheme(3)"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display-container">
+        <h1 id="screen"></h1>
+      </div>
+      <div class="main-calculator">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="func blue">DEL</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="func white">+</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="func white">-</button>
+        <button class="func white">.</button>
+        <button class="number">0</button>
+        <button class="func white">/</button>
+        <button class="func white">×</button>
+        <button class="func blue">RESET</button>
+        <button class="func red">=</button>
+      </div>
+    </main>
+  </body>
+</html>
